@@ -211,35 +211,63 @@ li:hover {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .main_content {
     height: 500px;
   }
 
-  .menu_card_1, .menu_card_2, .menu_card_3, .menu {
-    flex-direction: column ;
-    align-items: center;
+  .main_heading {
+    font-size: 3rem;
+  }
+
+  .menu_cards {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .menu_card {
     width: 80%;
     height: auto;
   }
 
-  .gallery {
-    flex-direction: column;
-    align-items : center;
-    flex-wrap: wrap;
+  .menu {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery_heading {
+    position: static;
   }
 
   .g1, .g2, .g3, .g4, .g5, .g6 {
-    width: 90% ;
-    max-height: none ;
+    display: block;
+    width: 90%;
+    max-height: none;
+    margin: 0 auto;
   }
 
   .about_us {
-    flex-direction: column ;
-    align-items: center ;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about_img,  .about_content {
-    width: 90% ;
-    margin-right: 0 ;
+  .about_img, .about_content {
+    width: 90%;
+    margin-right: 0;
   }
 }
